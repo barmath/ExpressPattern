@@ -1,0 +1,32 @@
+{
+    "itens" :[
+        {
+            "partName": "PartA",
+            "settings":[
+                {
+                    "partType": "Movable",
+                    "typeMovement": "Rotation"
+                }
+            ]
+            
+        }, 
+        {
+            "partName": "PartB",
+            "settings":[
+                {
+                    "partType": "Movable",
+                    "typeMovement": "Stright"
+                }
+            ]
+            
+        }, 
+        {
+            "partName": "PartC",
+            "settings":[
+                {
+                    "partType": "Stactic"
+                }
+            ]
+        }
+    ]
+}
