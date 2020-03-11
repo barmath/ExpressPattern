@@ -1,32 +1,64 @@
 {
     "itens" :[
         {
-            "partName": "PartA",
+            "partName": "outerdoor_uved",
             "settings":[
                 {
-                    "partType": "Movable",
-                    "typeMovement": "Rotation"
+                    "partType": "movable",
+                    "typeMovement": "straight",
+                    "axis" : "x",
+                    "center" : -0.5,
+                    "maxAngle" : 90.0,
+                    "minAngle" : 0.0,
+                    "components" : ["RigidBody"],
+                    "scripts" : ["x","y","z"]
                 }
-            ]
-            
-        }, 
+            ],
+            "positionCoordinates":[0.0, 2.0, 3.0],
+            "scale" : [1.0, 2.0, 3.0],
+            "rotation" : [1.0, 2.0, 3.0],
+            "parent" : "machinebase",
+            "children" : ["PartB","PartC"],
+            "texture" : "red"
+        }
+        ,
         {
-            "partName": "PartB",
+            "partName": "monitorstation",
             "settings":[
                 {
-                    "partType": "Movable",
-                    "typeMovement": "Stright"
+                    "partType": "movable",
+                    "typeMovement": "rotation",
+                    "axis" : "x",
+                    "center" : -0.5,
+                    "maxAngle" : 90.0,
+                    "minAngle" : 0.0,
+                    "components" : ["RigidBody"],
+                    "scripts" : ["x","y","z"]
                 }
-            ]
-            
-        }, 
+            ],
+            "positionCoordinates":[0.0, 2.0, 3.0],
+            "scale" : [1.0, 2.0, 3.0],
+            "rotation" : [1.0, 2.0, 3.0],
+            "parent" : "outerdoor_uved",
+            "children" : ["PartB","PartC"],
+            "texture" : "red"
+        }
+        ,
         {
             "partName": "PartC",
             "settings":[
                 {
-                    "partType": "Stactic"
+                    "partType": "static",
+                    "components" : ["RigidBody"],
+                    "scripts" : ["x","y","z"]
                 }
-            ]
+            ],
+            "positionCoordinates":[0.0, 2.0, 3.0],
+            "scale" : [1.0, 2.0, 3.0],
+            "rotation" : [1.0, 2.0, 3.0],
+            "parent" : "machinebase",
+            "children" : ["PartB","PartC"],
+            "texture" : "red"
         }
     ]
 }
